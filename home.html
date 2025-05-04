@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>INST377 - Activities</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Annyang -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>INST377 - Activities</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <p class="intro">These are some different activities we can try!</p>
+
+    <div class="button-container">
+      <button class="button-85" onclick="location.href='stocks.html'">
+        Stocks
+      </button>
+      <button class="button-85" onclick="location.href='dogs.html'">
+        Dogs
+      </button>
+    </div>
+
+    <div class="quote-box">
+      <h2>Quote of the page</h2>
+      <p id="quote">Loading quote…</p>
+    </div>
+
+    <div class="audio-box">
+      <h2>In this web page there are options to Navigate using Audio!</h2>
+      <ul>
+        <li><strong>Jump to a different page</strong>
+          <ul><li>Say: “Navigate to &lt;page&gt;”</li></ul>
+        </li>
+        <li><strong>Change the background color</strong>
+          <ul><li>Say: “Change the color to &lt;color&gt;”</li></ul>
+        </li>
+        <li><strong>Say whats up back to you!</strong>
+          <ul><li>Say: “Hello”</li></ul>
+        </li>
+      </ul>
+      <button onclick="turnOnAudio()">Turn On Listening</button>
+      <button onclick="turnOffAudio()">Turn Off Listening</button>
+    </div>
+  </main>
+
+</body>
+</html>

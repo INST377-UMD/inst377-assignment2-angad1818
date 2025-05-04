@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>INST377 - Doggos!</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/ruyadorno/simple-slider@master/dist/simpleslider.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>INST377-Doggos! 🐶</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="carousel-wrapper">
+      <div id="dogCarousel" data-simple-slider class="carousel"></div>
+    </div>
+
+    <div id="button-24" class="button-container"></div>
+
+    <div id="breed-info" class="hidden"></div>
+
+    <div class="audio-instructions">
+        <p><strong>Voice commands You Can Say:</strong></p>
+        <ul>
+          <li>“hello” - says hello back</li>
+          <li>“change the color to blue/red/etc” - bg color changes</li>
+          <li>“navigate to home/dogs” - jump to page</li>
+          <li>“load dog breed - returns dog breed info</li>
+        </ul>
+        <button onclick="turnOnAudio()">Enable Voice</button>
+        <button onclick="turnOffAudio()">Disable Voice</button>
+      </div>
+  </main>
+</body>
+</html>
