@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stocks</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- charts needed -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- voice recognition stuff -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Stock Lookup</h1>
+
+    <!-- ticker and day input section -->
+    <div class="form-row">
+      <input id="tickerInput" type="text" placeholder="ex: GME" maxlength="5">
+      <select id="daysSelect">
+        <option value="30">30 Days</option>
+        <option value="60">60</option>
+        <option value="90">90</option>
+      </select>
+      <button id="fetchBtn" class="button-85">Go</button>
+    </div>
+
+    <!-- area for chart -->
+    <canvas id="stockChart" width="600" height="300"></canvas>
+
+    <h2>Reddit Top Stocks</h2>
+
+    <table id="redditTable">
+      <thead>
+        <tr>
+          <th>Ticker</th>
+          <th>Comments</th>
+          <th>Sentiment</th>
+        </tr>
+      </thead>
+      <tbody id="redditBody">
+      </tbody>
+    </table>
+
+    <!-- vc rundown -->
+    <div class="audio-instructions">
+      <p><strong>Voice commands You Can Say:</strong></p>
+      <ul>
+        <li>“hello” - says hello back</li>
+        <li>“change the color to blue/red/etc” - bg color changes</li>
+        <li>“navigate to home/dogs” - jump to page</li>
+        <li>“look up ticker name - returns stock info for that ticker</li>
+      </ul>
+      <button onclick="turnOnAudio()">Enable Voice</button>
+      <button onclick="turnOffAudio()">Disable Voice</button>
+    </div>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,247 @@
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  
+  body {
+    background: tan;
+    font-family: Arial, sans-serif;
+    color: black;
+  }
+  
+  header {
+    padding: 1rem
+  }
+  header h1 {
+    font-size: 1.5rem
+  }
+  
+  nav {
+    background-color: orange;
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0.5rem 1rem;
+  }
+  nav li {
+    margin-right: 1rem
+  }
+  nav a {
+    text-decoration: none;
+    color: purple;
+  }
+  nav li:hover a {
+    color: white;
+  }
+  
+
+
+
+  /* Intro paragraph */
+  .intro {
+    margin: 2rem 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .button-container {
+    text-align: center;
+    margin: 1.5rem 0 2rem;
+  }
+  .btn-custom:hover {
+    opacity: 0.9
+  }
+  
+
+
+
+  .quote-box {
+    width: 90%;
+    max-width: 800px;
+    margin: auto auto 2rem auto;
+    background: #fff;
+    border: 1px solid #777;
+    padding: 1rem;
+    text-align: center;
+  }
+  .quote-box p {
+    font-style: italic;
+    color: black;
+  }
+  
+
+
+
+  /* audio section */
+  .audio-box {
+    width: 80%;
+    max-width: 800px;
+    margin: 2rem auto;
+    background-color: green;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+  }
+  .audio-box h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  .audio-box ul {
+    list-style: disc;
+    padding-left: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  .audio-box button {
+    background: white;
+    color: black;
+    border: none;
+    padding: 1rem 2rem;
+    margin-right: 0.75rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+
+
+
+  /*———————————————*/
+  /* glowing “button-85” */
+  /*———————————————*/
+  .button-85 {
+      padding: 0.6em 2em;
+      border: none;
+      outline: none;
+      color: rgb(255, 255, 255);
+      background: #111;
+      cursor: pointer;
+      position: relative;
+      z-index: 0;
+      border-radius: 10px;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+    
+  .button-85:before {
+      content: "";
+      background: linear-gradient(
+        45deg,
+        #ff0000,
+        #ff7300,
+        #fffb00,
+        #48ff00,
+        #00ffd5,
+        #002bff,
+        #7a00ff,
+        #ff00c8,
+        #ff0000
+      );
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      background-size: 400%;
+      z-index: -1;
+      filter: blur(5px);
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      animation: glowing-button-85 20s linear infinite;
+      transition: opacity 0.3s ease-in-out;
+      border-radius: 10px;
+  }
+  
+  @keyframes glowing-button-85 {
+      0%   { background-position:   0  0; }
+      50%  { background-position: 400% 0; }
+      100% { background-position:   0  0; }
+  }
+  
+  .button-85:after {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #222;
+      left: 0;
+      top: 0;
+      border-radius: 10px;
+  }
+  
+
+
+  /* Reddit table */
+  #redditTable {
+    width: 100%;
+    border-collapse: collapse
+  }
+  #redditTable th,
+  #redditTable td {
+    border: 1px solid #fff;
+    padding: .75rem;
+    text-align: center
+  }
+  #redditTable th {
+    background: #fff;
+    font-weight: 600
+  }
+#redditTable tbody tr {
+    background-color: tan;
+  }
+  
+  
+  .sentiment-icon {
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+  }
+  
+
+
+  /* Carousel zone */
+  .carousel-wrapper {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: 2rem auto;
+    overflow: hidden
+  }
+  
+  .carousel {
+    width: 100%;
+    padding-bottom: 50%;
+    position: relative
+  }
+  
+  .carousel img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0
+  }
+
+
+  
+  /* breed info box */
+  #breed-info {
+    max-width: 600px;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 2px solid #888;
+    border-radius: 6px;
+    background: white;
+  }
+  #breed-info.hidden {
+    display: none
+  }
+  #breed-info h2 {
+    margin-bottom: 0.5rem
+  }
+  #breed-info p {
+    margin: .3rem 0
+  }
+  
